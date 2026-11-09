@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Todolist v1.1</title>
+</head>
+<body>
+  
+  <div class="container">
+
+    <header class="header">
+      <div class="header-wrapper">
+        <h2>Your Progress</h2>
+        <span class="all-task-html">1 of 3 tasks completed</span>
+      </div>
+      <div class="progress-bar">
+        <div class="bar"></div>
+      </div>
+      <div class="tasks-wrapper">
+        <div class="task-wrapper">
+          <span class="task task-html">1</span>
+          <span>Pending</span>
+        </div>
+        <div class="task-wrapper">
+          <span class="task task-complete-html">3</span>
+          <span>Completed</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="form-wrapper">
+      <div class="input-wrapper">
+        <i class="fa-solid fa-search"></i>
+        <input type="text" name="" id="" class="search-input" placeholder="Search tasks ...">
+      </div>
+      <select name="" id="" class="select-input">
+        <option value="all">All</option>
+        <option value="active">Active</option>
+        <option value="completed">Completed</option>
+      </select>
+    </div>
+
+    <div class="box">
+      <div class="box-wrapper">
+        <span>All Tasks</span>
+        <button class="btn btn-clear">Clear All Task</button>
+      </div>
+      <div class="content"></div>
+    </div>
+    
+  </div>
+
+  <button class="floating-btn">+</button>
+
+  <div class="overlay">
+    <div class="floating-form">
+      <div class="floating-form-header">
+        <h2>Form add task</h2>
+        <button class="btn-close">&times;</button>
+      </div>
+      <div class="floating-form-content">
+        <div class="form-group">
+          <label for="">Add task</label>
+          <input type="text" name="" id="" class="input" placeholder="Add task ...">
+        </div>
+      </div>
+      <div class="floating-form-footer">
+        <button class="btn-form btn-cancel">Cancel</button>
+        <button class="btn-form btn-submit">Submit</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.25/dist/sweetalert2.all.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
